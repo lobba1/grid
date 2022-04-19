@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+           h1 {
+  font-family: Impact, sans-serif;
+  color: #CE5937;
+  }
+  p{
+
+        font-family: Volvo Novum, Arial, sans-serif;
+  }
+  body{
+    padding:0;
+    margin:0;
+  }
+
+  #img{
+    height: 60%;
+    width: 100%;
+    object-fit :cover;
+    object-position: center bottom;
+  }
+  #img1{
+    height: 60%;
+    width: 80%;
+    object-fit :cover;
+    object-position: center bottom;
+  }
+
+  .nav{
+
+    height: 64px;
+    border-bottom:solid 0.5px;
+    display:flex;
+    width:100%;
+   
+
+  }
+
+  .s1{
+
+    width:50%;
+    display:flex; 
+    align-items:center;
+    justify-items:center;
+    padding:1rem;
+
+
+  }
+  .s2{
+
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    justify-items:center;
+    padding:1rem;
+
+  }
+
+  #pp{
+
+    margin-right:1rem
+  }
+  .text{
+    width:100%;
+      height: 300px;
+    display:flex;
+      justify-content:center;
+    align-items:center;
+    justify-items:center;
+
+
+  }
+
+  .con{width:100%;
+
+  display:flex;
+     flex-direction: column;
+     justify-content:center;
+    align-items:center;
+    justify-items:center;
+
+
+
+  }
+
+  #ttex{
+    width:30%;
+    text-align:center;
+    font-size:1.7rem;
+    color:darkgray;
+
+  }
+  #strong{
+    color:black;
+  }
+  #button:hover{
+
+background-color: #1c6bba;
+    color:white;
+  }
+  #iim{
+
+    height:0.6rem;
+  }
+  #iimo{
+
+    height:0.6rem;
+    padding:1rem;
+  
+  }
+  #button{
+    background-color: white;
+    margin-top:40px;
+    margin-bottom:40px;
+    min-width: 96px;
+    outline: 0;
+    padding: 12px 24px;
+    line-height: 22px;
+    border: 1px solid;
+    line-height: 22px;
+    border-radius: 4px;
+
+      fill: #1c6bba;
+
+
+      border-color: #1c6bba;
+
+      align-items: baseline;
+
+      user-select: none;
+      outline: 0;
+      min-width: 96px;
+      display: inline-flex;
+      stroke: #1c6bba;
+      color: #1c6bba;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      font-family: Volvo Novum, Arial, sans-serif;
+      text-align: center;
+      box-sizing: border-box;
+      justify-content: center;
+      outline-style: none;
+      box-shadow: none;
+
+
+
+  }
+  #ii{
+
+      font-family: Volvo Novum, Arial, sans-serif;
+      text-align: center;
+    padding: 1rem;
+
+  }
+  #sidebar{
+
+    width:25%;
+    height:100%;
+    position: absolute;
+    background-color: white;
+    left:0;
+    display:none;
+  }
+  .ct{
+
+   height:64px;
+      display:flex; 
+    align-items:center;
+    justify-items:center;
+    border-bottom: 1px solid black;
+
+
+  }
+  .dark-mode {
+    background-color: #d6d2d1;
+
+  }
+    </style>
+    <title>Volvo</title>
+
+    </head>
+
+<body>
+    <div class="nav">
+     <div id="sidebar">
+       <div class="ct">
+         <img id="iimo" src="https://seeklogo.com/images/V/volvo-logo-9E6C0AEE8E-seeklogo.com.png"> 
+           <img id="iimo" onclick="men()" src="data:image/png;base64,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">
+       </div>
+       <div id="ii" >
+         <p>
+           ELECTRIC
+         </p>
+           <p>
+           DIESEL
+         </p>
+         <p>
+           PETROL
+         </p>
+
+       </div>
+
+
+      </div>
+    <div class="s1">
+       <img id="iim" src="https://seeklogo.com/images/V/volvo-logo-9E6C0AEE8E-seeklogo.com.png">
+
+    </div>
+
+    <div class="s2">
+      <p id="pp">
+    Våra bilar
+
+
+      </p> 
+      <p id="pp" onclick="menu()">
+    Meny
+      </p> 
+
+    </div>
+
+
+
+
+</div>
+
+
+    <div>
+      <img src="https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/my23/homepage/heroes/xc40-bev-21x9.jpg?iar=0&w=1366" id="img">
+      </div>
+
+     <div class="text">
+       <p id="ttex">
+         <strong id="strong">Volvo Recharge</strong>. Vi introducerar vår nya modellserie av elbilar och laddhybrider.
+       </p>
+      </div>
+
+     <div class="con">
+       <img src="https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/my23/homepage/homepage-gallery-01-21x9.jpg?iar=0&w=1366" id="img1">
+      <button onclick="myFunction()" id="button">
+    LÄS MER OM RECHARGe
+       </button>
+      </div>
+
+    </body>  <script>
+    function myFunction() {
+
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+
+    }
+    function menu() {
+
+
+
+          document.getElementById('sidebar').style.display ="block";
+
+
+
+    }
+
+    function men(){
+      document.getElementById('sidebar').style.display ="none";
+
+    }
+    </script>
+    </html>

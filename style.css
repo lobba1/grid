@@ -1,0 +1,193 @@
+
+h1 {
+  font-family: Impact, sans-serif;
+  color: #CE5937;
+  }
+  p{
+  
+        font-family: Volvo Novum, Arial, sans-serif;
+  }
+  body{
+    padding:0;
+    margin:0;
+  }
+  
+  #img{
+    height: 60%;
+    width: 100%;
+    object-fit :cover;
+    object-position: center bottom;
+  }
+  #img1{
+    height: 60%;
+    width: 80%;
+    object-fit :cover;
+    object-position: center bottom;
+  }
+  
+  .nav{
+  
+    height: 64px;
+    border-bottom:solid 0.5px;
+    display:flex;
+    width:100%;
+  
+  
+  }
+  
+  .s1{
+  
+    width:50%;
+    display:flex; 
+    align-items:center;
+    justify-items:center;
+    padding:1rem;
+  
+  
+  }
+  .s2{
+  
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    justify-items:center;
+    padding:1rem;
+  
+  }
+  
+  #pp{
+  
+    margin-right:1rem
+  }
+  .text{
+    width:100%;
+      height: 300px;
+    display:flex;
+      justify-content:center;
+    align-items:center;
+    justify-items:center;
+  
+   
+  }
+  
+  .con{width:100%;
+  
+  display:flex;
+     flex-direction: column;
+     justify-content:center;
+    align-items:center;
+    justify-items:center;
+  
+  
+  
+  }
+  
+  #ttex{
+    width:30%;
+    text-align:center;
+    font-size:1.7rem;
+    color:darkgray;
+  
+  }
+  #strong{
+    color:black;
+  }
+  #button:hover{
+  
+    background-color: #1c6bba;
+    color:white;
+  }
+  #iim{
+  
+    height:0.6rem;
+  }
+  #iimo{
+  
+    height:0.6rem;
+    padding:1rem;
+  }
+  #button{
+    background-color: white;
+    margin-top:40px;
+    margin-bottom:40px;
+    min-width: 96px;
+    outline: 0;
+    padding: 12px 24px;
+    line-height: 22px;
+    border: 1px solid;
+    line-height: 22px;
+    border-radius: 4px;
+  
+      fill: #1c6bba;
+  
+  
+      border-color: #1c6bba;
+  
+      transition-property: transform, background, fill, stroke, color, border-color, box-shadow;
+  
+      transition-timing-function: ease-out;
+  
+      transition-duration: 100ms, 300ms;
+      -webkit-align-items: baseline;
+      -ms-flex-item-align-items: baseline;
+      align-items: baseline;
+  
+      -webkit-touch-callout: none;
+      user-select: none;
+      outline: 0;
+      min-width: 96px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      stroke: #1c6bba;
+      color: #1c6bba;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      font-family: Volvo Novum, Arial, sans-serif;
+      text-align: center;
+      box-sizing: border-box;
+      justify-content: center;
+      outline-style: none;
+      box-shadow: none;
+  
+      -webkit-font-smoothing: auto;
+  
+  
+  }
+  #ii{
+  
+      font-family: Volvo Novum, Arial, sans-serif;
+      text-align: center;
+    padding: 1rem;
+  
+  }
+  #sidebar{
+  
+    width:25%;
+    height:100%;
+    position: absolute;
+    background-color: white;
+    left:0;
+    display:none;
+  }
+  .ct{
+  
+   height:64px;
+      display:flex; 
+    align-items:center;
+    justify-items:center;
+    border-bottom: 1px solid black;
+  
+  
+  }
+  .dark-mode {
+    background-color: #d6d2d1;
+   
+  }
+  
